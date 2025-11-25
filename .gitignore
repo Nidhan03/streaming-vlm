@@ -7,7 +7,7 @@ checkpoints/
 output_image/
 
 
-# ---- OS / 编辑器垃圾 ----
+# ---- OS / Editor files ----
 .DS_Store
 Thumbs.db
 *.swp
@@ -16,7 +16,7 @@ Thumbs.db
 .vscode/
 *.code-workspace
 
-# ---- 依赖与构建产物 ----
+# ---- Dependencies & Build artifacts ----
 node_modules/
 dist/
 build/
@@ -25,25 +25,25 @@ coverage/
 *.coverage
 *.prof
 
-# ---- 日志 / 运行态 ----
+# ---- Logs / Runtime ----
 logs/
 *.log
 *.pid
 *.pid.lock
 
-# ---- 环境变量（保留示例，忽略真实文件）----
+# ---- Environment variables (keep examples, ignore real files) ----
 .env
 .env.*
 !.env.example
 
-# ---- 大文件 / 媒体（统一忽略所有视频/音频/字幕）----
-*.mp4
-*.mkv
-*.webm
-*.mov
-*.ts
-*.avi
-*.m4v
+# ---- Large files / Media (ignore all video/audio/subtitle files) ----
+# *.mp4
+# *.mkv
+# *.webm
+# *.mov
+# *.ts
+# *.avi
+# *.m4v
 *.wav
 *.mp3
 *.flac
@@ -51,7 +51,7 @@ logs/
 *.vtt
 *.ass
 
-# ---- 数据集 / 评测结果 / 大 JSONL ----
+# ---- Datasets / Evaluation results / Large JSONL ----
 datasets/
 output/
 outputs/
@@ -61,7 +61,7 @@ models/
 **/StreamingVLM_answers.jsonl
 *.jsonl
 
-# ---- Python 相关（如果你装了环境/跑了脚本）----
+# ---- Python related (environments/scripts) ----
 __pycache__/
 *.pyc
 *.pyo
@@ -70,11 +70,11 @@ __pycache__/
 venv/
 .envrc
 
-# ---- server 运行时产物 ----
+# ---- Server runtime artifacts ----
 streaming-vlm-demo/server/tmp_*.vtt
 streaming-vlm-demo/server/*.log
 
-# ---- 上传目录（若有本地 uploads 目录，忽略所有上传的用户视频）----
+# ---- Upload directory (ignore all uploaded user videos if local uploads directory exists) ----
 **/uploads/**
 !streaming-vlm-demo/server/uploads/.gitkeep
 tmp*
