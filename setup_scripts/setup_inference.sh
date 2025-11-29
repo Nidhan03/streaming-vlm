@@ -26,6 +26,11 @@ cd streaming-vlm
 echo "Installing system dependencies..."
 conda install -y ffmpeg -y
 
+echo "Installing block-sparse-attn..."
+pip install torch==2.2.0
+pip install git+https://github.com/mit-han-lab/Block-Sparse-Attention.git@v0.0.1
+
+
 echo "Installing inference requirements..."
 pip install -r infer_requirements.txt
 pip install transformers==4.51.3 accelerate deepspeed peft opencv-python decord datasets tensorboard gradio pillow-heif gpustat timm sentencepiece openai av==12.0.0 liger_kernel numpy==1.24.4 yt-dlp tqdm huggingface_hub ffmpeg wandb
