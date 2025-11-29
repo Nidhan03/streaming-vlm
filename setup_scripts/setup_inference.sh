@@ -1,6 +1,8 @@
 #!/bin/bash
 
+
 echo "Creating StreamingVLM Inference Environment..."
+cd ../..
 echo ""
 
 echo "Installing Miniconda..."
@@ -16,6 +18,10 @@ conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 echo "Creating conda environment..."
 conda create -n streamingvlm-infer python=3.11 -y
 conda activate streamingvlm-infer
+
+pip install --upgrade pip
+
+cd streaming-vlm
 
 echo "Installing system dependencies..."
 conda install -y ffmpeg
