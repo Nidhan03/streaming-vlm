@@ -34,11 +34,11 @@ echo "Installing system dependencies..."
 echo "----------------------------------------------"
 conda install -y ffmpeg -y
 
-echo "----------------------------------------------"
-echo "Installing block-sparse-attn..."
-echo "----------------------------------------------"
-pip install torch==2.2.0
-pip install --no-build-isolation git+https://github.com/mit-han-lab/Block-Sparse-Attention.git@v0.0.1
+# echo "----------------------------------------------"
+# echo "Installing block-sparse-attn..."
+# echo "----------------------------------------------"
+# pip install torch==2.2.0
+# pip install --no-build-isolation git+https://github.com/mit-han-lab/Block-Sparse-Attention.git@v0.0.1
 
 
 echo "----------------------------------------------"
