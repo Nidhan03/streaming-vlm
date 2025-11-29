@@ -28,4 +28,3 @@ pip install -e streaming_vlm/livecc_utils/
 
 echo ""
 echo "✅ Inference environment setup complete!"
-echo "Activate with: conda activate streamingvlm-infer"

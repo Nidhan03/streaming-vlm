@@ -4,7 +4,7 @@
 # Custom Configuration Variables
 # ============================================================
 MODEL_PATH="mit-han-lab/StreamingVLM"
-VIDEO_PATH="sample_videos/demo.mp4"
+VIDEO_PATH="sample_videos/00002180.mp4"
 OUTPUT_DIR="output/inference_result.vtt"
 QUERY="Correct the exercise"
 WINDOW_SIZE="16"
