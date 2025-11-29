@@ -10,6 +10,9 @@ rm miniconda.sh
 export PATH="$HOME/miniconda/bin:$PATH" #conda commands are found first
 source $HOME/miniconda/etc/profile.d/conda.sh #initialize conda for bash
 
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
 echo "Creating conda environment..."
 conda create -n streamingvlm-infer python=3.11 -y
 conda activate streamingvlm-infer
