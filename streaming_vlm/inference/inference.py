@@ -287,6 +287,8 @@ def streaming_inference(model_path="",
     ##############################################################################
     # Prepare subtitle file header ##############################################
     if output_dir is not None:
+        # Create parent directory if it doesn't exist
+        os.makedirs(os.path.dirname(output_dir), exist_ok=True)
         if os.path.exists(output_dir):
             os.remove(output_dir)
         with open_vtt(output_dir):  # Write WEBVTT header
