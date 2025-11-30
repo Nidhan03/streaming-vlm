@@ -40,6 +40,9 @@ mkdir -p "$(dirname "$OUTPUT_DIR")"
 # Change to the parent directory of the script
 cd "$(dirname "$0")/.." || exit 1
 
+# Add project root to PYTHONPATH
+export PYTHONPATH="${PWD}:${PYTHONPATH}"
+
 # Run inference with custom variables or command-line arguments
 python streaming_vlm/inference/inference.py \
     --model_path "$MODEL_PATH" \
