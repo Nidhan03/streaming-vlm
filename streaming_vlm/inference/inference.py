@@ -543,6 +543,8 @@ if __name__ == "__main__":
     # Both non-None: apply both
     args.add_argument("--text_sink", type=int, default=DEFAULT_TEXT_SINK)
     args.add_argument("--text_sliding_window", type=int, default=DEFAULT_TEXT_SLIDING_WINDOW)
+    args.add_argument("--duration", type=int, default=TOTAL_VIDEO_DURATION)
+    args.add_argument("--query", type=str, default="Commentate on this match")
 
     args.add_argument("--output_dir", type=str)
     args.add_argument("--emit_json", action="store_true", help="逐秒输出 JSON 行到 stdout")
